@@ -1,0 +1,418 @@
+/* 
+    Document   : style
+    Created on : 05/03/2014, 18:06:43 
+    Author     : Juan Ramos
+
+*/
+@font-face {
+    font-family: 'coolveticaregular';
+    src: url('font/coolvetica_rg-webfont.eot');
+    src: url('font/coolvetica_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/coolvetica_rg-webfont.woff') format('woff'),
+         url('font/coolvetica_rg-webfont.ttf') format('truetype'),
+         url('font/coolvetica_rg-webfont.svg#coolveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+a{
+	text-decoration: none;
+}
+body{
+
+	background: #434244 ;
+	font-family: 'coolveticaregular', sans-serif;
+	font-size: 16px;
+}
+body,h2,h3,h4,p{
+	font-weight: 300
+}
+
+*:focus {
+    outline: 0;
+}
+li{
+	list-style: none;
+}
+h1,h2,h3,ul{
+	margin: 0;
+	padding: 0;
+}
+section{
+	margin: 0 auto;
+	width: 960px;
+}
+/*=================================================================
+header
+===================================================================*/
+header{
+	margin: 0 auto;
+	width: 960px;
+
+
+}
+nav,#logo{
+	display: inline-block;
+	vertical-align: bottom;
+}
+nav a{
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+}
+nav a:hover{
+	color: #C4D545
+}
+nav li{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 24px;
+	text-align: left;
+}
+nav span{
+	display: block;
+}
+#logo{
+	padding: 0 30px;
+}
+/*=================================================================
+Banner
+===================================================================*/
+#banner{
+	margin: 20px auto 0;
+	position: relative;
+	width: 960px;
+}
+#banner img{
+	max-width: 960px;
+}
+
+.flex-control-nav{
+	display: none
+}
+.flex-next, .flex-prev{
+	border-top: 7px solid transparent;
+    border-right: 14px solid #000;
+    border-bottom: 7px solid transparent;
+    height: 0;
+    margin: 0 10px;
+
+	position: absolute;
+	text-indent: -9999px;
+	top: 50%;
+	width: 0;
+    
+}
+.flex-next{
+	border-left: 14px solid #000;
+    border-right: 0;
+	right: 0;
+}
+
+/*=================================================================
+banner page
+===================================================================*/
+#banner-page{
+	background: #fff url("../images/banner-page.jpg");
+	background-size: 961px;
+	color: #C4D545;
+	font-size: 3rem;
+	font-weight: bold; 
+	height: 390px;
+	margin-top: -3px;
+	padding-left: 50px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}	
+#banner-page h2{
+	
+	font-weight: bold; 
+}
+#banner-page img{
+	max-width: 960px;
+}
+#banner-page span{
+	display: block;
+	font-size: 4rem;
+	line-height: 3rem;
+
+}
+/*=================================================================
+Qué es
+===================================================================*/
+#que-es {
+	background: #B6B8BA;
+}
+#que-es article{
+	display: inline-block;
+	margin: 20px 0;
+	padding: 0 40px;
+	vertical-align: top;
+	width: 49%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+#que-es article:first-child{
+	border-right: 2px solid #fff;
+}
+#que-es h3{
+	font-size: 1em;
+	font-weight: bold;
+
+}
+#que-es p{
+	font-size: .9em;
+}
+/*=================================================================
+Historia
+===================================================================*/
+#historia {
+	background: #B6B8BA;
+}
+#historia article{
+	display: inline-block;
+	margin: 20px 0;
+	padding: 0 40px;
+	vertical-align: top;
+	width: 49%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+#historia article:first-child{
+	border-right: 2px solid #fff;
+}
+#historia h3{
+	font-size: 1em;
+	font-weight: bold;
+
+}
+#historia p{
+	font-size: .9em;
+}
+.historia h2, .historia span{
+	color: #98BFC7	
+}
+/*=================================================================
+Proyectos
+===================================================================*/
+.project  {
+	background: #B6B8BA;
+}
+.project article{
+	display: inline-block;
+	margin: 20px 0;
+	padding: 0 40px;
+	vertical-align: top;
+	width: 49%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.project  article:last-child{
+	border-left: 2px solid #fff;
+}
+.project  h3{
+	font-size: 1em;
+	font-weight: bold;
+
+}
+.project  p{
+	font-size: .9em;
+}
+.project  h2, .project  span{
+	color: #98BFC7	
+}
+
+
+.banner-project{
+	font-size: 3rem;
+	font-weight: bold;
+	margin-top: -4px;
+	
+}	
+.banner-project h2{
+	
+	font-weight: bold; 
+	padding: 10px 0;
+}
+.banner-project img{
+	max-width: 960px;
+}
+.banner-project span{
+	display: block;
+	font-size: 4rem;
+	line-height: 3rem;
+
+}
+.contend-project{
+	height: 274px;
+	position: relative;
+}
+.contend-project figcaption{
+	bottom: 0;
+	color: #fff;
+	font-size: 2em;
+	font-weight: bold;
+	padding: 20px 30px;
+	position: absolute;
+
+}
+.contend-project figcaption h2{
+	font-weight: bold;
+}
+.head-project{
+	background: #B6B8BA ;
+	color: #434244;
+	padding-left: 50px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.circulart{
+	background: #98BFC7;
+}
+.vive{
+	background: #C4D545
+}
+/*=================================================================
+team
+===================================================================*/
+#team li{
+	display: inline-block;
+	width: 49%;
+	padding: 20px 40px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.banner-team{
+	color: #fff;
+	font-size: 3rem;
+	font-weight: bold;
+	margin-top: -4px;
+	
+}	
+.banner-team h2{
+	
+	font-weight: bold; 
+	padding: 10px 0;
+}
+
+.banner-team span{
+	display: block;
+	font-size: 4rem;
+	line-height: 3rem;
+
+}
+/*=================================================================
+Contact
+===================================================================*/
+#contact input{
+	display: inline-block;
+	padding: 0;
+	width: 89%
+}
+#contact label{
+	color: #fff;
+	display: inline-block;
+	margin-bottom: 25px;
+	vertical-align: top;
+	width: 10%
+}
+#contact input[type="submit"]{
+	background: none;
+	border: none;
+	color: #C4D545;
+	font-size: 2.5em;
+	margin: 15px 25px 65px;
+	width: auto;
+	
+}
+#contact  span{
+	display: block;
+	text-align: right;
+	width: 100%;
+}
+.banner-contact{
+	color: #C4D545;
+	font-size: 3rem;
+	font-weight: bold;
+	margin-top: -4px;
+	
+}	
+.banner-contact h2{
+	color: #C4D545;
+	font-weight: bold; 
+	padding: 10px 0;
+}
+
+.banner-contact span{
+	display: block;
+	font-size: 4rem;
+	line-height: 3rem;
+
+}
+textarea{
+	margin: 0px;
+	height: 150px;
+	padding: 0;	
+	width: 89%;
+}
+
+
+/*=================================================================
+social
+===================================================================*/
+
+
+#social{
+	background: #A3C3CD;
+	padding: 50px 0;
+	text-align: center;
+}
+#social img{
+
+}
+#social li{
+	display: inline-block;
+	padding: 0 20px;
+	vertical-align: middle;
+}
+.arrow-next, .arrow-prev {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 10px solid transparent;
+}
+.arrow-prev {
+
+    border-right: 20px solid #fff;
+    border-left: 0;
+}
+
+/*=================================================================
+Footer
+===================================================================*/
+footer{
+	margin: 0 auto;
+	width: 960px
+}
+footer span{
+	display: block;
+}
+footer a{
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+}
+footer a:hover{
+	color: #C4D545
+}
+#nav-footer li{
+	margin: 5px 0;
+}
