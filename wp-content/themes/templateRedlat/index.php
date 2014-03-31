@@ -1,14 +1,23 @@
 <?php get_header(); ?>
 
+
+
 <main role="main">
-	<?php while ( have_posts() ) : the_post(); ?>
+    <section id="que-es">
+	<?php $home = new WP_Query(array(
+        'cat' => '3'
+    ));
+
+    while ( $home->have_posts() ) : $home->the_post();
+        ?>
 
 		<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
 			<?php the_content(); ?>
 		</article>
 
 	<?php endwhile; ?>
+    </section>
 </main>
 
 <?php get_sidebar(); ?>

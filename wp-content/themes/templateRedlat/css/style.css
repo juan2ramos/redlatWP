@@ -21,7 +21,7 @@ a{
 body{
 
 	background: #434244 ;
-	font-family: 'coolveticaregular', sans-serif;
+	/*font-family: 'coolveticaregular', sans-serif;*/
 	font-size: 16px;
 }
 body,h2,h3,h4,p{
@@ -261,6 +261,9 @@ Proyectos
 .contend-project figcaption h2{
 	font-weight: bold;
 }
+.project a{
+    color: #000;
+}
 .head-project{
 	background: #B6B8BA ;
 	color: #434244;
@@ -274,6 +277,9 @@ Proyectos
 }
 .vive{
 	background: #C4D545
+}
+figure{
+    margin: 0;
 }
 /*=================================================================
 team
