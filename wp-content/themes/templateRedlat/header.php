@@ -39,7 +39,7 @@
     <section id="banner" role="banner">
             <div class="carousel">
                 <div class="slider slider-reservas" id="">
-
+                    <ul class="slides">
                     <?php
                     $slider_query = new WP_Query(array(
                         'cat' => '2'
@@ -55,7 +55,7 @@
                     $event_id = get_post_meta( $post->ID, "_link", true );
                     $event_url = get_permalink( $event_id );
                     ?>
-                    <ul class="slides">
+
 
                       <li>
 
@@ -64,8 +64,9 @@
                           $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 720,405 ), false, '' );
                           echo $src[0];
                           ?> ">
-
+                        <div id="contend-image"><?php the_content(); ?></div>
                         </span>
+
                       </li>
 
                         <?php

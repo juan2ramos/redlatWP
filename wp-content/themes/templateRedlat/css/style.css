@@ -51,6 +51,7 @@ header{
 
 
 }
+
 nav,#logo{
 	display: inline-block;
 	vertical-align: bottom;
@@ -84,7 +85,10 @@ Banner
 #banner img{
 	max-width: 960px;
 }
-
+#banner .caption{
+    display: block;
+    position: relative;
+}
 .flex-control-nav{
 	display: none
 }
@@ -106,7 +110,17 @@ Banner
     border-right: 0;
 	right: 0;
 }
-
+#contend-image{
+    color: #FFFFFF;
+    font-size: 5em;
+    left: 40px;
+    position: absolute;
+    top: 200px;
+}
+#contend-image p{
+    font-weight: bold;
+    margin: 0
+}
 /*=================================================================
 banner page
 ===================================================================*/
@@ -292,7 +306,31 @@ team
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 }
-
+#team figure{
+    position: relative;
+}
+#team figcaption{
+    width: 0;
+    height: 0;
+    border-bottom: 343px solid #98BFC7;
+    border-right: 396px solid transparent;
+    color:#fff;
+    position: absolute;
+    top:0
+}
+.contend-p{
+    -webkit-transform: rotate(-90deg) translate(-210px,195px);
+    -moz-transform: rotate(-90deg) translate(-210px,195px);
+    width:300px;
+    position:absolute;
+    bottom:0px;
+    left:-300px;
+}
+.contend-p p{
+font-weight: bold;
+margin: 0;
+font-size: 1.5em
+}
 .banner-team{
 	color: #fff;
 	font-size: 3rem;
