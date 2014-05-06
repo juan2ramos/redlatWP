@@ -312,8 +312,8 @@ team
 #team figcaption{
     width: 0;
     height: 0;
-    border-bottom: 343px solid #98BFC7;
-    border-right: 396px solid transparent;
+    /*border-bottom: 343px solid #98BFC7;
+    border-right: 396px solid transparent;*/
     color:#fff;
     position: absolute;
     top:0
