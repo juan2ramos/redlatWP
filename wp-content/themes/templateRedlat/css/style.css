@@ -305,26 +305,32 @@ team
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
+    vertical-align: top;
+}
+#team img{
+    min-width: 400px
 }
 #team figure{
     position: relative;
 }
 #team figcaption{
-    width: 0;
+    /*width: 0;
     height: 0;
-    /*border-bottom: 343px solid #98BFC7;
-    border-right: 396px solid transparent;*/
-    color:#fff;
+    border-bottom: 343px solid #98BFC7;
+    border-right: 396px solid transparent;
+
     position: absolute;
-    top:0
+    top:0*/
+    color:#D15622;
 }
 .contend-p{
-    -webkit-transform: rotate(-90deg) translate(-210px,195px);
+    width:400px;
+    /*-webkit-transform: rotate(-90deg) translate(-210px,195px);
     -moz-transform: rotate(-90deg) translate(-210px,195px);
-    width:300px;
+
     position:absolute;
     bottom:0px;
-    left:-300px;
+    left:-300px;*/
 }
 .contend-p p{
 font-weight: bold;
@@ -336,11 +342,11 @@ font-size: 1.5em
 	font-size: 3rem;
 	font-weight: bold;
 	margin-top: -4px;
-	
-}	
+
+}
 .banner-team h2{
-	
-	font-weight: bold; 
+
+	font-weight: bold;
 	padding: 10px 0;
 }
 
