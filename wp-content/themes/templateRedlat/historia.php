@@ -27,6 +27,10 @@ Template Name: historia
 
 	<?php endwhile; ?>
     </section>
+    <section>
+
+        <div class="dipity_embed" style="width:600px"><iframe width="600" height="400" src="http://www.dipity.com/jenny_giraldo/Trayectoria-REDLAT/?mode=embed&z=0#tl" style="border:1px solid #CCC;"></iframe><p style="margin:0;font-family:Arial,sans;font-size:13px;text-align:center"><a href="http://www.dipity.com/jenny_giraldo/Trayectoria-REDLAT/">Trayectoria REDLAT</a> on <a href="http://www.dipity.com/" />Dipity</a>.</p></div>
+    </section>
 </main>
 
 <?php get_sidebar(); ?>
