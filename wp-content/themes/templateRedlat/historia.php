@@ -30,7 +30,7 @@ Template Name: historia
     <section>
 
         <div class="dipity_embed" style="width:960px">
-            <iframe width="960" height="400" src="http://www.dipity.com/jenny_giraldo/Trayectoria-REDLAT/?mode=embed&z=0#tl" style="border:1px solid #CCC;"></iframe>
+            <iframe width="960" height="400" src="http://www.dipity.com/jenny_giraldo/Trayectoria-REDLAT/?mode=embed&z=0#tl" style="border:none;"></iframe>
         </div>
     </section>
 </main>
