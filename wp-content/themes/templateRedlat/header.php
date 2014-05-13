@@ -22,7 +22,7 @@
 	<header>
         <figure id="logo">
             <a href="<?php echo home_url(); ?>/" rel="home">
-            	<img src="<?php bloginfo('template_directory'); ?>/images/logo-redlat.svg" alt="Logo Redlat">
+            	<img src="<?php bloginfo('template_directory'); ?>/images/logo-redlat.png" alt="Logo Redlat">
             </a>
         </figure>
         <nav role="navigation">
