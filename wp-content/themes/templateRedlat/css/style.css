@@ -57,6 +57,7 @@ header {
 
 nav, #logo {
     display: inline-block;
+    padding-top: 20px;
     vertical-align: bottom;
 }
 
