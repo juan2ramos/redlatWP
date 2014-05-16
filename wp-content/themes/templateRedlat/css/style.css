@@ -356,7 +356,7 @@ team
 }
 
 #team img {
-    min-width: 145px
+    max-width: 145px
 }
 
 #team figure {
