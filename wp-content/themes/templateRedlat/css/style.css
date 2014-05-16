@@ -347,7 +347,7 @@ team
 ===================================================================*/
 #team li {
     display: inline-block;
-    width: 49%;
+    width: 24.5%;
     padding: 20px 40px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -356,7 +356,7 @@ team
 }
 
 #team img {
-    min-width: 400px
+    min-width: 145px
 }
 
 #team figure {
@@ -378,7 +378,7 @@ team
     -webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;
     background:#ff6600;
     padding: 10px;
-    width:400px;
+    width:145px;
     /*-webkit-transform: rotate(-90deg) translate(-210px,195px);
     -moz-transform: rotate(-90deg) translate(-210px,195px);
 
@@ -389,8 +389,8 @@ team
 
 .contend-p p {
     font-weight: bold;
-    font-size: 1.5em;
-    line-height: 0.9em;
+    font-size: .9em;
+    line-height: 1.2em;
     margin: 0;
 }
 
