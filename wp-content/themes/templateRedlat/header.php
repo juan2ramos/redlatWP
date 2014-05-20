@@ -28,7 +28,7 @@
         <nav role="navigation">
             <ul>
             	<?php #wp_nav_menu(array('theme_location' => 'primary')); ?>
-                <li><a href="que-es"><span>...</span>¿que es?</a></li>
+                <li><a href="que-es"><span>...</span>¿qué es?</a></li>
                 <li><a href="historia"><span>...</span>historia</a></li>
                 <li><a href="proyectos"><span>...</span>proyectos</a></li>
                 <li><a href="equipo"><span>...</span>equipo<br>de trabajo</a></li>
