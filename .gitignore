@@ -1,2 +1,7 @@
 *.DS_Store
 wp-config.php
+wp-admin/
+wp-includes/
+wp-content/uploads/
+wp-content/plugins/
+wp-content/languages/
