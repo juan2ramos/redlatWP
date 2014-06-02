@@ -2,11 +2,10 @@
         <section id="social">
             <ul>
                 <li><div class="arrow-prev"></div></li>
-                <li><a href=""><img src="<?php bloginfo('template_directory'); ?>/images/facebook.svg" alt=""></a></li>
-                <li><a href=""><img src="<?php bloginfo('template_directory'); ?>/images/twitter.svg" alt=""></a></li>
-                <li><a href=""><img src="<?php bloginfo('template_directory'); ?>/images/flicker.svg" alt=""></a></li>
-                <li><a href=""><img src="<?php bloginfo('template_directory'); ?>/images/youtube.svg" alt=""></a></li>
-                <li><a href=""><img src="<?php bloginfo('template_directory'); ?>/images/instagram.svg" alt=""></a></li>
+                <li><a href="https://www.facebook.com/Circulart"><img src="<?php bloginfo('template_directory'); ?>/images/facebook.svg" alt=""></a></li>
+                <li><a href="https://twitter.com/Circulart"><img src="<?php bloginfo('template_directory'); ?>/images/twitter.svg" alt=""></a></li>
+                <li><a href="https://www.youtube.com/channel/UCp1LtBBVxj68-drbIhJg71Q"><img src="<?php bloginfo('template_directory'); ?>/images/youtube.svg" alt=""></a></li>
+                <li><a href="http://www.instagram.com/circulartmc"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.svg" alt=""></a></li>
                 <li><div class="arrow-next"></div></li>
             </ul>
         </section>
