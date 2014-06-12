@@ -3,7 +3,39 @@
 Template Name: contacto
 */
 ?>
-<?php get_header(); ?>
+<?php
+$band = true;
+$message = '';
+if (!empty($_POST)) {
+
+    if (empty($_POST['name']) || empty($_POST['institution']) || empty($_POST['email']) || empty($_POST['phone']) || ($_POST['message'])) {
+        $success = FALSE;
+        $message = 'Todos los campos son requeridos';
+
+    }
+
+    require 'include/PHPMailer/PHPMailerAutoload.php';
+
+    $mail = new PHPMailer;
+    $mail->IsSendmail();
+    $mail->FromName = 'Formulario de contacto Sitio redlat.org';
+    $mail->CharSet = 'UTF-8';
+    $mail->From = 'via@festivaldeteatro.com.co';
+    $mail->Subject = $_POST['message'];
+    $mail->MsgHTML('Mensaje con HTML');
+    $template = '<h1>Mensaje enviado desde el formulario de redlat.org</h1><br><br>';
+    $template .= 'Nombre: ' . $_POST['name'] . '<br>';
+    $template .= 'Email: ' . $_POST['email'] . '<br>';
+    $template .= 'Mensaje: <br>' . $_POST['message'];
+    $mail->Body = $template;
+    $mail->AddAddress('via@festivaldeteatro.com.co', '');
+    $mail->Send();
+    $band = false;
+    $message = 'Felicitaciones, su mensaje a sido enviado con éxito!!';
+
+}
+get_header();
+?>
 
 <section class="banner-contact">
     <div class="head-contact">
@@ -13,7 +45,9 @@ Template Name: contacto
     </div>
 </section>
 <section id="contact">
-    <form>
+    <p><?php echo $message?>/p>
+    <?php if ($band): ?>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <div>
             <label for="name">Nombre:</label>
             <input type="text" name="name">
@@ -38,7 +72,6 @@ Template Name: contacto
         <textarea name="message"></textarea>
         <span><input type="submit" value="...enviar"></span>
     </form>
-
     <div class="contact-info">
         <div>
             Información General REDLAT<br>
@@ -79,7 +112,9 @@ Template Name: contacto
             Jenny Giraldo<br>
             <a href="mailto:jennygiraldo@redlat.org">jennygiraldo@redlat.org</a><br>
         </div>
+    </div>
+    <?php endif?>
 </section>
-</div>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
