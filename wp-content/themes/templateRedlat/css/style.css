@@ -419,13 +419,16 @@ team
 Contact
 ===================================================================*/
 #contact form{
-    display: inline-block;
-    width: 700px
+     display: inline-block;
+     width: 700px
+}
+#contact div{
+    margin-bottom: 15px;
 }
 #contact input {
     display: inline-block;
     padding: 0;
-    width: 500px
+    width: 650px
 }
 
 #contact label {
