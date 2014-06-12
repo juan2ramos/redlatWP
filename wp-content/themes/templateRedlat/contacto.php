@@ -45,9 +45,9 @@ get_header();
     </div>
 </section>
 <section id="contact">
-    <p><?php echo $message?>/p>
+    <p><?php echo $message?></p>
     <?php if ($band): ?>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <form action="contacto">
         <div>
             <label for="name">Nombre:</label>
             <input type="text" name="name">
