@@ -47,7 +47,7 @@ get_header();
 <section id="contact">
     <p><?php echo $message?></p>
     <?php if ($band): ?>
-    <form action="contacto" method="post">
+    <form action="/contacto" method="post">
         <div>
             <label for="name">Nombre:</label>
             <input type="text" name="name">
