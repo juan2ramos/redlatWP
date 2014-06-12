@@ -420,7 +420,7 @@ Contact
 ===================================================================*/
 #contact form{
      display: inline-block;
-     width: 6500px
+     width: 650px
 }
 #contact div{
 }
@@ -451,7 +451,7 @@ Contact
 #contact span {
     display: block;
     text-align: right;
-    width: 630px;
+    width: 452px;
 }
 
 .banner-contact {
@@ -489,7 +489,7 @@ textarea {
     margin: 0px;
     height: 150px;
     padding: 0;
-    width: 89%;
+    width: 452px;
 }
 
 /*=================================================================
