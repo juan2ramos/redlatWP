@@ -14,7 +14,7 @@ if (!empty($_POST)) {
 
     }
 
-    require 'include/PHPMailer/PHPMailerAutoload.php';
+    require '/home/redlat/public_html/via/include/PHPMailer/PHPMailerAutoload.php';
 
     $mail = new PHPMailer;
     $mail->IsSendmail();
