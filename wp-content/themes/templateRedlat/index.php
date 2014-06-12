@@ -23,7 +23,7 @@
                     <li>
 
                         <span class="caption">
-                            <a href="<?php echo get_post_meta($post->ID, 'link', true); ?>">
+                            <a href="<?php echo get_post_meta($post->ID, 'link', true); ?>" target="_blank">
                           <img src="<?php
                           $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 720,405 ), false, '' );
                           echo $src[0];

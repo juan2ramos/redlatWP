@@ -50,7 +50,7 @@ section {
 header
 ===================================================================*/
 header {
-    margin: 0 auto;
+    margin: 0 auto 50px;
     width: 960px;
 
 }
@@ -484,6 +484,12 @@ Contact
 
     margin-bottom: 15px;
     width: 300px;
+}
+.contact-info a{
+    color: #C4D545;
+}
+.contact-info a:hover{
+    text-decoration: underline;
 }
 textarea {
     margin: 0px;
