@@ -420,15 +420,14 @@ Contact
 ===================================================================*/
 #contact form{
      display: inline-block;
-     width: 700px
+     width: 6500px
 }
 #contact div{
-    margin-bottom: 15px;
 }
 #contact input {
     display: inline-block;
     padding: 0;
-    width: 650px
+    width: 450px
 }
 
 #contact label {
@@ -481,8 +480,10 @@ Contact
     vertical-align: top;
     width: 100px;
 }
-.contact-info {
+.contact-info div{
 
+    margin-bottom: 15px;
+    width: 300px;
 }
 textarea {
     margin: 0px;
