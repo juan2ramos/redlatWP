@@ -10,7 +10,7 @@ if (!empty($_POST)) {
 
     if (empty($_POST['name']) || empty($_POST['institution']) || empty($_POST['email']) || empty($_POST['phone']) || ($_POST['message'])) {
         $success = FALSE;
-        $message = 'Todos los campos son requeridos';
+        $message = 'Todos los campos son requeridos!!';
 
     } else {
 
@@ -20,7 +20,7 @@ if (!empty($_POST)) {
         $mail->IsSendmail();
         $mail->FromName = 'Formulario de contacto Sitio redlat.org';
         $mail->CharSet = 'UTF-8';
-        $mail->From = 'juan@festivaldeteatro.com.co';
+        $mail->From = 'juan2ramos@redlat.org';
         $mail->Subject = $_POST['message'];
         $mail->MsgHTML('Mensaje con HTML');
         $template = '<h1>Mensaje enviado desde el formulario de redlat.org</h1><br><br>';
@@ -28,7 +28,7 @@ if (!empty($_POST)) {
         $template .= 'Email: ' . $_POST['email'] . '<br>';
         $template .= 'Mensaje: <br>' . $_POST['message'];
         $mail->Body = $template;
-        $mail->AddAddress('via@festivaldeteatro.com.co', '');
+        $mail->AddAddress('juan2ramos@redlat.org', '');
         $mail->Send();
         $band = false;
         $message = 'Felicitaciones, su mensaje a sido enviado con éxito!!';
