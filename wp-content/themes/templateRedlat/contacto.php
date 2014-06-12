@@ -38,47 +38,48 @@ Template Name: contacto
         <textarea name="message"></textarea>
         <span><input type="submit" value="...enviar"></span>
     </form>
-</section>
-<div class="contact-info">
-    <div>
-        Información General REDLAT<br>
-        info@redlat.org<br>
-    </div>
-    <div>
-        Información General CIRCULART<br>
-        info@circulart.org<br>
-    </div>
-    <div>
 
-        Secretaria Ejecutiva-Tesorera<br>
-        Beatriz Elena García<br>
-        bettygarcia@redlat.org<br>
-    </div>
-    <div>
-        Producción General REDLAT<br>
-        Julián Arbeláez<br>
-        Julian.arbelaez@redlat.org<br>
-    </div>
-    <div>
-        Producción General CIRCULART<br>
-        Paula Posada<br>
-        paulaposada@circulart.org<br>
-    </div>
-    <div>
-        Coordinación Profesionales Ruedas de Negocios<br>
-        Luis Fernando Zuluaga<br>
-        luisfer@circulart.org<br>
-    </div>
-    <div>
-        Coordinación Artistas Ruedas de Negocios<br>
-        Milena García<br>
-        milenagarcia@circulart.org<br>
-    </div>
-    <div>
-        Editora web y redes sociales<br>
-        Jenny Giraldo<br>
-        jennygiraldo@redlat.org<br>
-    </div>
+    <div class="contact-info">
+        <div>
+            Información General REDLAT<br>
+            info@redlat.org<br>
+        </div>
+        <div>
+            Información General CIRCULART<br>
+            info@circulart.org<br>
+        </div>
+        <div>
+
+            Secretaria Ejecutiva-Tesorera<br>
+            Beatriz Elena García<br>
+            bettygarcia@redlat.org<br>
+        </div>
+        <div>
+            Producción General REDLAT<br>
+            Julián Arbeláez<br>
+            Julian.arbelaez@redlat.org<br>
+        </div>
+        <div>
+            Producción General CIRCULART<br>
+            Paula Posada<br>
+            paulaposada@circulart.org<br>
+        </div>
+        <div>
+            Coordinación Profesionales Ruedas de Negocios<br>
+            Luis Fernando Zuluaga<br>
+            luisfer@circulart.org<br>
+        </div>
+        <div>
+            Coordinación Artistas Ruedas de Negocios<br>
+            Milena García<br>
+            milenagarcia@circulart.org<br>
+        </div>
+        <div>
+            Editora web y redes sociales<br>
+            Jenny Giraldo<br>
+            jennygiraldo@redlat.org<br>
+        </div>
+</section>
 </div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
