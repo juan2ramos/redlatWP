@@ -418,10 +418,14 @@ team
 /*=================================================================
 Contact
 ===================================================================*/
+#contact form{
+    display: inline-block;
+    width: 700px
+}
 #contact input {
     display: inline-block;
     padding: 0;
-    width: 89%
+    width: 500px
 }
 
 #contact label {
@@ -429,7 +433,7 @@ Contact
     display: inline-block;
     margin-bottom: 25px;
     vertical-align: top;
-    width: 10%
+    width: 100px
 }
 
 #contact input[type="submit"] {
@@ -445,7 +449,7 @@ Contact
 #contact span {
     display: block;
     text-align: right;
-    width: 100%;
+    width: 630px;
 }
 
 .banner-contact {
@@ -468,7 +472,15 @@ Contact
     line-height: 3rem;
 
 }
+.contact-info{
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+}
+.contact-info {
 
+}
 textarea {
     margin: 0px;
     height: 150px;
