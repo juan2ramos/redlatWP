@@ -494,9 +494,10 @@ Contact
     text-decoration: underline;
 }
 .contact-info h3{
+    color: #C4D545;
     font-size: 1.1em;
-    width: 220px;
     margin: -10px 0 25px;
+    width: 220px;
 
 }
 textarea {
