@@ -493,6 +493,12 @@ Contact
 .contact-info a:hover{
     text-decoration: underline;
 }
+.contact-info h3{
+    font-size: 1.1em;
+    width: 220px;
+    margin: -10px 0 25px;
+
+}
 textarea {
     margin: 0px;
     height: 150px;

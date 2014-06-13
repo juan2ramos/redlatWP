@@ -73,6 +73,7 @@ get_header();
             <span><input type="submit" value="...enviar"></span>
         </form>
         <div class="contact-info">
+            <h3>O puedes escribirle a...</h3>
             <div>
                 Información General REDLAT<br>
                 <a href="mailto:info@redlat.org">info@redlat.org</a><br>
