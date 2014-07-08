@@ -17,7 +17,7 @@ get_header();
 </section>
 <section id="contact">
 
-        <form action="http://redlat.org/contacto" method="post" id="contact-form">
+        <form action="" method="post" id="contact-form">
             <div>
                 <label for="name-user">Nombre:</label>
                 <input type="text" name="name-user">
@@ -51,7 +51,7 @@ get_header();
                     <option value="paulaposada@circulart.org">Producción General CIRCULART</option>
                     <option value="luisfer@circulart.org">Coordinación Profesionales Ruedas de Negocios</option>
                     <option value="milenagarcia@circulart.org">Coordinación Artistas Ruedas de Negocios</option>
-                    <option value="juanramos@redlat.org">Editora web y redes sociales</option>
+                    <option value="jennygiraldo@redlat.org">Editora web y redes sociales</option>
                 </select>
             </div>
             <span><input type="submit" value="...enviar"></span>

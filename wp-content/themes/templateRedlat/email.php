@@ -23,9 +23,9 @@ if (!empty($_POST)) {
     $template .= 'Nombre: ' . $_POST['name-user'] . '<br>';
     $template .= 'Email: ' . $_POST['email'] .'<br>';
     $template .= 'telefono: ' . $_POST['phone'] .'<br>';
-    $template .= 'institución: <br>' . $_POST['institution'] ;
-    $template .= 'city: <br>' . $_POST['institution'] ;
-    $template .= 'Mensaje: <br>' . $_POST['message'] ;
+    $template .= 'institución: <br>' . $_POST['institution'].'<br>' ;
+    $template .= 'city: <br>' . $_POST['institution'].'<br>' ;
+    $template .= 'Mensaje: <br>' . $_POST['message'].'<br>' ;
     $mail->Body = $template;
     $mail->AddAddress($_POST['dirigido'], '');
     $mail->Send();

@@ -503,6 +503,11 @@ Contact
     width: 220px;
 
 }
+.contact-info .message{
+    text-align: left;
+    font-size: 1.2em;
+    color: #C4D545
+}
 textarea {
     margin: 0px;
     height: 150px;
