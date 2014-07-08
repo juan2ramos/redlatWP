@@ -16,8 +16,7 @@ get_header();
     </div>
 </section>
 <section id="contact">
-    <p><?php echo $message ?></p>
-    <?php if ($band): ?>
+
         <form action="http://redlat.org/contacto" method="post" id="#contact-form">
             <div>
                 <label for="name-user">Nombre:</label>
@@ -100,7 +99,6 @@ get_header();
                 <a href="mailto:jennygiraldo@redlat.org">jennygiraldo@redlat.org</a><br>
             </div>
         </div>
-    <?php endif ?>
 </section>
 
 <?php get_sidebar(); ?>
