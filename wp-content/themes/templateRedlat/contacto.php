@@ -4,36 +4,7 @@ Template Name: contacto
 */
 ?>
 <?php
-$band = true;
-$message = '';
-if (!empty($_POST)) {
 
-    if (empty($_POST['name']) || empty($_POST['institution']) || empty($_POST['email']) || empty($_POST['phone']) || ($_POST['message'])) {
-        $success = FALSE;
-        $message = 'Todos los campos son requeridos!!';
-
-    } else {
-
-        require '/home/redlat/public_html/via/include/PHPMailer/PHPMailerAutoload.php';
-
-        $mail = new PHPMailer;
-        $mail->IsSendmail();
-        $mail->FromName = 'Formulario de contacto Sitio redlat.org';
-        $mail->CharSet = 'UTF-8';
-        $mail->From = 'juan2ramos@redlat.org';
-        $mail->Subject = $_POST['message'];
-        $mail->MsgHTML('Mensaje con HTML');
-        $template = '<h1>Mensaje enviado desde el formulario de redlat.org</h1><br><br>';
-        $template .= 'Nombre: ' . $_POST['name'] . '<br>';
-        $template .= 'Email: ' . $_POST['email'] . '<br>';
-        $template .= 'Mensaje: <br>' . $_POST['message'];
-        $mail->Body = $template;
-        $mail->AddAddress('juanramos@redlat.org', '');
-        $mail->Send();
-        $band = false;
-        $message = 'Felicitaciones, su mensaje a sido enviado con éxito!!';
-    }
-}
 get_header();
 ?>
 
@@ -47,10 +18,10 @@ get_header();
 <section id="contact">
     <p><?php echo $message ?></p>
     <?php if ($band): ?>
-        <form action="http://redlat.org/contacto" method="post">
+        <form action="http://redlat.org/contacto" method="post" id="#contact-form">
             <div>
-                <label for="name">Nombre:</label>
-                <input type="text" name="name">
+                <label for="name-user">Nombre:</label>
+                <input type="text" name="name-user">
             </div>
             <div>
                 <label for="institution">Institución:</label>
@@ -70,10 +41,25 @@ get_header();
             </div>
             <label for="message">Mensaje:</label>
             <textarea name="message"></textarea>
+
+            <div class="input-contend">
+                <label for="dirigido">Dirigido a : </label>
+                <select name="dirigido" id="">
+                    <option value="info@redlat.org">Información General REDLAT</option>
+                    <option value="info@circulart.org">Información General CIRCULART</option>
+                    <option value="bettygarcia@redlat.org">Secretaria Ejecutiva-Tesorera</option>
+                    <option value="julian.arbelaez@redlat.org"> Producción General REDLAT</option>
+                    <option value="paulaposada@circulart.org">Producción General CIRCULART</option>
+                    <option value="luisfer@circulart.org">Coordinación Profesionales Ruedas de Negocios</option>
+                    <option value="milenagarcia@circulart.org">Coordinación Artistas Ruedas de Negocios</option>
+                    <option value="juanramos@redlat.org">Editora web y redes sociales</option>
+                </select>
+            </div>
             <span><input type="submit" value="...enviar"></span>
         </form>
         <div class="contact-info">
             <h3>O puedes escribirle a...</h3>
+
             <div>
                 Información General REDLAT<br>
                 <a href="mailto:info@redlat.org">info@redlat.org</a><br>
