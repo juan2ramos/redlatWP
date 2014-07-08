@@ -17,7 +17,7 @@ get_header();
 </section>
 <section id="contact">
 
-        <form action="http://redlat.org/contacto" method="post" id="#contact-form">
+        <form action="http://redlat.org/contacto" method="post" id="contact-form">
             <div>
                 <label for="name-user">Nombre:</label>
                 <input type="text" name="name-user">

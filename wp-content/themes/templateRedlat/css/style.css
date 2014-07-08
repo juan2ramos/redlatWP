@@ -431,7 +431,10 @@ Contact
     padding: 0;
     width: 450px
 }
-
+#contact select{
+    text-transform: none;
+    width: 455px;
+}
 #contact label {
     color: #fff;
     display: inline-block;
