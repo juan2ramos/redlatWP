@@ -28,7 +28,7 @@ if (!empty($_POST)) {
         $template .= 'Email: ' . $_POST['email'] . '<br>';
         $template .= 'Mensaje: <br>' . $_POST['message'];
         $mail->Body = $template;
-        $mail->AddAddress('juan2ramos@redlat.org', '');
+        $mail->AddAddress('juanramos@redlat.org', '');
         $mail->Send();
         $band = false;
         $message = 'Felicitaciones, su mensaje a sido enviado con éxito!!';
@@ -47,7 +47,7 @@ get_header();
 <section id="contact">
     <p><?php echo $message ?></p>
     <?php if ($band): ?>
-        <form action="/contacto" method="post">
+        <form action="http://redlat.org/contacto" method="post">
             <div>
                 <label for="name">Nombre:</label>
                 <input type="text" name="name">
